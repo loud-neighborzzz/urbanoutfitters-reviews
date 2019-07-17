@@ -29,7 +29,7 @@ class Reviews extends Component {
   }
   handleSubmitReview(newReview) {
 
-    fetch(`http://localhost:3001/reviews${this.state.itemId}`, {
+    fetch(`http://localhost:3001/reviews/${this.state.itemId}`, {
       method: 'PATCH',
       mode: 'cors',
       headers: {

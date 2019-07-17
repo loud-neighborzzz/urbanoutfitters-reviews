@@ -8,7 +8,7 @@
     "build": "webpack",
     "test": "jest",
     "server": "nodemon ./server/index.js",
-    "seed": "node ./db/seed/seedDb"
+    "seed": "node ./db/seed/SeedDB.js"
   },
   "repository": {
     "type": "git",
