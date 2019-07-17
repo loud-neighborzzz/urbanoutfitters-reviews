@@ -5,7 +5,7 @@ import Reviews from './components/Reviews'
 
 ReactDOM.render(
   <Reviews />,
-  document.getElementById('app')
+  document.getElementById('Reviews')
 );
 
 module.hot.accept();
