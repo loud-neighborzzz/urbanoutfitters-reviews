@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack",
     "test": "jest",
-    "server": "nodemon ./server/index.js"
+    "server": "nodemon ./server/index.js",
+    "seed": "node ./db/seed/seedDb"
   },
   "repository": {
     "type": "git",
