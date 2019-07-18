@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import styles from '../../styles.css'
+
 
 class Size_Info_Bar extends Component {
     constructor(props) {
@@ -30,8 +32,8 @@ class Size_Info_Bar extends Component {
         const avgFit = this.getAvgFit()
         return (
             avgFit && (
-            <div className="box">
-                <p className="grey">{avgFit.fit}</p>
+            <div className={styles["box"]}>
+                <p className={styles["grey"]}>{avgFit.fit}</p>
                 <p>{this.generateScale(avgFit.percentage)}</p>
             </div>
         ))

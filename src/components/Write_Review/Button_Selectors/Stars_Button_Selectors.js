@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import StarRatings from 'react-star-ratings';
+import styles from '../../../styles.css'
  
 class Stars_Button_Selectors extends Component {
     constructor(props) {
@@ -16,7 +17,7 @@ class Stars_Button_Selectors extends Component {
     }
     render() {
       return (
-        <div className="overall-rating">
+        <div className={styles["overall-rating"]}>
             <br></br>
             <p>Overall Rating</p>
             <StarRatings

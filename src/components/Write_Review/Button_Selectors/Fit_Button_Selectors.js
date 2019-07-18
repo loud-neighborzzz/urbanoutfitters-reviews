@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import styles from '../../../styles.css'
+
 
 class Fit_Button_Selectors extends Component {
     constructor(props) {
@@ -26,9 +28,9 @@ class Fit_Button_Selectors extends Component {
         const { styleSmall, styleTrue, styleLarge } = this.state
         return (
             <div className="size-and-fit">
-            <button name="runs small" className={styleSmall} onClick={this.handleChange}>Runs Small</button>
-            <button name="true to size" className={styleTrue} onClick={this.handleChange}>True to Size</button>
-            <button name="runs large" className={styleLarge} onClick={this.handleChange}>Runs Large</button>
+            <button name="runs small" className={styles[styleSmall]} onClick={this.handleChange}>Runs Small</button>
+            <button name="true to size" className={styles[styleTrue]} onClick={this.handleChange}>True to Size</button>
+            <button name="runs large" className={styles[styleLarge]} onClick={this.handleChange}>Runs Large</button>
             </div>
         )
     }

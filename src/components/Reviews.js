@@ -3,6 +3,7 @@ import Info_Bar from './Info_Bar/Info_Bar';
 import Write_Review from './Write_Review/Write_Review';
 import Reviews_List from './Reviews_List/Reviews_List';
 import { fetch } from 'whatwg-fetch'
+import styles from '../styles.css'
 
 class Reviews extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Reviews extends Component {
   }
   getReviews() {
     console.log('fetching reviews')
-    fetch(`http://ec2-34-210-165-224.us-west-2.compute.amazonaws.com:3001/reviews/${window.location.pathname.slice(1)}`)
+    fetch(`http://ec2-34-210-165-224.us-west-2.compute.amazonaws.com:3001/reviews${window.location.pathname}`)
     .then((item) => item.json())
     .then((item) => this.setState({
       reviews: item[0].reviews.reverse(), 
@@ -29,7 +30,7 @@ class Reviews extends Component {
   }
   handleSubmitReview(newReview) {
 
-    fetch(`http://ec2-34-210-165-224.us-west-2.compute.amazonaws.com:3001/reviews/${this.state.itemId}`, {
+    fetch(`http://ec2-34-210-165-224.us-west-2.compute.amazonaws.com:3001/reviews${window.location.pathname}`, {
       method: 'PATCH',
       mode: 'cors',
       headers: {
@@ -40,7 +41,7 @@ class Reviews extends Component {
   }
   render() {
     return (
-      <div className="reviews-body">
+      <div className={styles["reviews-body"]}>
             <div>
               <br></br>
               <h5>Reviews</h5>

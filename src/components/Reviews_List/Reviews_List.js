@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Review_Print from './Reviews_Print';
+import styles from '../../styles.css'
 
 class Reviews_List extends Component {
     constructor(props) {

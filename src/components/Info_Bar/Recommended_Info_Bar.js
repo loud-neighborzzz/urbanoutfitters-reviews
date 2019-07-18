@@ -1,4 +1,5 @@
 import React, { Component }from 'react'
+import styles from '../../styles.css'
 
 class Recommended_Info_Bar extends Component {
     constructor(props) {
@@ -12,8 +13,8 @@ class Recommended_Info_Bar extends Component {
         const avgRec = this.getAvgRecommendations().toFixed()
         return (
             avgRec >= 60 && (
-            <div className="box">
-                <p className="grey">{avgRec}% recommended</p>
+            <div className={styles["box"]}>
+                <p className={styles["grey"]}>{avgRec}% recommended</p>
                 <ion-icon size="large" name="checkmark-circle-outline"></ion-icon>
             </div>
         ))

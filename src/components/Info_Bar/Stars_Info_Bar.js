@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import StarRatings from 'react-star-ratings'
+import styles from '../../styles.css'
+
 
 class Stars_Info_Bar extends Component {
     constructor(props) {
@@ -14,8 +16,8 @@ class Stars_Info_Bar extends Component {
       const { reviews } = this.props
       const avgRating = reviews.length === 0 ? 0 : this.getAvgRating(reviews)    
       return (
-        <div className="box">
-          <p className="grey">
+        <div className={styles["box"]}>
+          <p className={styles["grey"]}>
           {avgRating} | {reviews.length} Reviews
           </p>
           <StarRatings

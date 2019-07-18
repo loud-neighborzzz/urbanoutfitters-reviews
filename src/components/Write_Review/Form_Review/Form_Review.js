@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Height_Select from './Height_Select';
+import styles from '../../../styles.css'
 
 class Form_Review extends Component {
     constructor(props) {
@@ -27,7 +28,7 @@ class Form_Review extends Component {
         const { body, title, username, location } = this.state
         return (
             <form 
-                className="form-review"
+                className={styles["form-review"]}
                 onSubmit={(e) => {
                     e.preventDefault()
                     this.props.handleSubmit(this.state)
@@ -113,7 +114,7 @@ class Form_Review extends Component {
                     </select>
                     <br></br>
                     <br></br>
-                <button className="submit" type="submit">Submit</button>
+                <button className={styles["submit"]} type="submit">Submit</button>
                 <br></br>
                 <br></br>
             </form>

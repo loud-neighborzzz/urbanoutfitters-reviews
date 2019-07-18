@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from '../../../styles.css'
 
 class Recommend_Button_Selectors extends Component {
     constructor(props) {
@@ -21,11 +22,11 @@ class Recommend_Button_Selectors extends Component {
     render() {
         const { yesStyle, noStyle } = this.state
         return (
-            <div className="woud-you-recommend">
+            <div className={styles["woud-you-recommend"]}>
                 <p>Would you recommend this product to a friend?</p>    
                 <br></br>                    
-                <button className={yesStyle} onClick={() => this.handleChange(true)}>Yes</button>
-                <button className={noStyle} onClick={() => this.handleChange(false)}>No</button>
+                <button className={styles[yesStyle]} onClick={() => this.handleChange(true)}>Yes</button>
+                <button className={styles[noStyle]} onClick={() => this.handleChange(false)}>No</button>
             </div>
         )
     }
