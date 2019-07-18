@@ -19,7 +19,7 @@ class Reviews extends Component {
   }
   getReviews() {
     console.log('fetching reviews')
-    fetch(`http://localhost:3001/reviews/${window.location.pathname.slice(1)}`)
+    fetch(`http://ec2-34-210-165-224.us-west-2.compute.amazonaws.com:3001/reviews/${window.location.pathname.slice(1)}`)
     .then((item) => item.json())
     .then((item) => this.setState({
       reviews: item[0].reviews.reverse(), 
@@ -29,7 +29,7 @@ class Reviews extends Component {
   }
   handleSubmitReview(newReview) {
 
-    fetch(`http://localhost:3001/reviews/${this.state.itemId}`, {
+    fetch(`http://ec2-34-210-165-224.us-west-2.compute.amazonaws.com:3001/reviews/${this.state.itemId}`, {
       method: 'PATCH',
       mode: 'cors',
       headers: {
