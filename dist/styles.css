@@ -159,6 +159,7 @@ div {
     letter-spacing: .04rem;
     text-align: center;
     color: #767676;
+    background-color: #fff;
 }
 
 .button-selectors button:hover {
