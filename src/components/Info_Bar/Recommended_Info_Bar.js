@@ -1,6 +1,6 @@
 import React, { Component }from 'react'
 import styles from '../../styles.css'
-import MdCheckmarkCircleOutline from 'react-ionicons/lib/MdCheckmarkCircleOutline'
+import  MdCheckmarkCircleOutline from 'react-ionicons/lib/MdCheckmarkCircleOutline'
 
 class Recommended_Info_Bar extends Component {
     constructor(props) {

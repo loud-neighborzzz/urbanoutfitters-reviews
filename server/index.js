@@ -4,12 +4,14 @@ const app = express()
 const { Reviews } = require('../db/index')
 const path = require('path')
 const cors = require('cors')
+const compression = require('compression')
 
 const port = 3001
 
 app.use(cors())
 app.use(express.static(path.join(__dirname, '..', 'dist')))
 app.use(bodyParser.json())
+app.use(compression())
 
 app.get('/:id', (req, res) => {
     res.sendFile('index.html', {root: path.join(__dirname, '..', 'dist')})
