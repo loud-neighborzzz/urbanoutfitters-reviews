@@ -1,5 +1,6 @@
 import React, { Component }from 'react'
 import styles from '../../styles.css'
+import MdCheckmarkCircleOutline from 'react-ionicons/lib/MdCheckmarkCircleOutline'
 
 class Recommended_Info_Bar extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class Recommended_Info_Bar extends Component {
             avgRec >= 60 && (
             <div className={styles["box"]}>
                 <p className={styles["grey"]}>{avgRec}% recommended</p>
-                <ion-icon size="large" name="checkmark-circle-outline"></ion-icon>
+                <MdCheckmarkCircleOutline fontSize="2.7rem"/>
             </div>
         ))
     }

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --watch",
+    "build": "webpack",
     "test": "jest",
     "server": "nodemon ./server/index.js",
     "seed": "node ./db/seed/SeedDB.js"
@@ -43,12 +43,14 @@
     "express": "^4.15.0",
     "faker": "^4.1.0",
     "fetch": "^1.1.0",
+    "ionicons": "^4.6.1",
     "jquery": "^3.1.1",
     "mongo": "^0.1.0",
     "mongoose": "^4.9.6",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-ionicons": "^3.0.1",
     "react-star-ratings": "^2.3.0",
     "request": "^2.81.0",
     "to-string-loader": "^1.1.5",
