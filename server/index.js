@@ -9,9 +9,9 @@ const compression = require('compression')
 const port = 3001
 
 app.use(cors())
+app.use(compression())
 app.use(express.static(path.join(__dirname, '..', 'dist')))
 app.use(bodyParser.json())
-app.use(compression())
 
 app.get('/:id', (req, res) => {
     res.sendFile('index.html', {root: path.join(__dirname, '..', 'dist')})
