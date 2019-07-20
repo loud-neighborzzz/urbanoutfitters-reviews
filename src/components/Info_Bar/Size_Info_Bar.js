@@ -34,7 +34,7 @@ class Size_Info_Bar extends Component {
             avgFit && (
             <div className={styles["box"]}>
                 <p className={styles["grey"]}>{avgFit.fit}</p>
-                <p>{this.generateScale(avgFit.percentage)}</p>
+                <p>{avgFit.percentage + '%'}</p>
             </div>
         ))
     }

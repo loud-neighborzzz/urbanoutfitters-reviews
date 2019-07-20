@@ -8,6 +8,8 @@
     letter-spacing: 0em;
 }
 .reviews-body {
+    padding-left: 10%;
+    padding-right: 10%;
     background: #fff;
     font: 1.1rem/1.36 helvetica,arial,sans-serif;
     font-size: 0.8em;
@@ -55,12 +57,17 @@
     margin: 5px 0 20px;
 }
 .reviews-body .info-bar .box {
+    font-size: 1.2rem;
     margin: 2px;
     margin-bottom: 3px;
     padding: 30px;
     background-color: #f5f5f5;
     flex-grow: 1;
     text-align: center;
+}
+
+.reviews-body .info-bar .box .grey{
+    font-size: .9rem;
 }
 
 .reviews-list {
@@ -261,6 +268,6 @@
     font-weight: bold;
 }
 
-.reviews-body .write-review .button:focus {
+button:focus {
     outline: 0;
 }
